@@ -1,0 +1,24 @@
+﻿<Page x:Class="Sign_1.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sign_1"
+        mc:Ignorable="d"
+        Title="Start" Height="500" Width="850">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/love.jpg"/>
+        </Grid.Background>
+        <Button x:Name="start" Content="START" BorderBrush="#FF191818" Opacity="0.7" Command="{Binding Tb}" Width="266" Height="96" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,359,0,0" FontFamily="Comic Sans MS" FontSize="40" FontWeight="Bold" Foreground="#FF634B4B" Click="start_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="70"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="1"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>
